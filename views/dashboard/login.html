@@ -41,8 +41,12 @@
             url: '/api/login',
             type: 'post',
             data: data,
-            success:function(){
+            success:function(result){
                 alert('登陆成功');
+                // var info = result.result; //用一个变量保存接收到的返回值（返回值是一个对象）
+                // var infoStr = JSON.stringify(info); //把info对象转为字符串
+                // $.cookie('tcinfo',infoStr); //把这段字符串保存到cookie的tcinfo里
+                $.cookie('tcinfo',JSON.stringify(result.result));
                 location.href ='/';
             },
             error:function(){
