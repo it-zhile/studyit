@@ -3,10 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>学IT - 后台管理系统</title>
-    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/font-awesome/css/font-awesome.css">
-    <link rel="stylesheet" href="./assets/nprogress/nprogress.css">
-    <link rel="stylesheet" href="./less/index.css">
+    <?php include 'views/common/css.htlm'?>
 </head>
 <body>
     
@@ -98,6 +95,7 @@
             </ul>
         </div>
     </div>
+    <?php include 'views/common/aside.html'?>
     <!-- 主体 -->
     <div class="main">
         <div class="container-fluid">
@@ -169,9 +167,6 @@
         </div>
     </div>
 
-    <script src="./assets/jquery/jquery.min.js"></script>
-    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="./assets/nprogress/nprogress.js"></script>
-    <script src="./js/common.js"></script>
 </body>
 </html>
+<?php inlcued 'views/common/js.html'?>
